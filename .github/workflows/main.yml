@@ -1,11 +1,13 @@
-
 name: Lab7 CI workflow
+
 on: [push]
+
 jobs:
-build:
-runs-on: ubuntu-latest
-steps:
--name: Checkout code
-uses: actions/checkout@v2
--name: Run a greeting script
-run: echo "Hello Hadia! GitHub Actions setup complete."
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Run a greeting script
+        run: echo "Hello Hadia! GitHub Actions setup complete."
